@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.89); 
+    z-index: 1;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6, button{
+      font-family: "Montserrat", sans-serif;
+  }
+  h1{
+      font-weight: 600;
+      letter-spacing: 5px;
+  }
+  button{
+      font-weight: 500;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  .countdown-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .countdown {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .label {
+    font-size: 0.8rem;
+    color: #dcad54;
+    margin-top: 5px;
+  }
+  span{
+      color: #dcad54;
+  }
+  .email-container {
+    margin-top: 20px;
+  }
+  .email-input {
+    padding: 7px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 220px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  .subscribe-button {
+    width: 120px;
+    background-color: #dcad54;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .subscribe-button:hover {
+    background-color: #c49030;
+  }
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  /*POPUP CODES*/
+
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type="email"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Alert styles */
+.alert {
+    position: relative;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: white;
+    opacity: 1;
+    animation: fadeInSlide 0.8s forwards;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+}
+
+.alert-error {
+    background-color: #f44336;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Animation for alerts */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

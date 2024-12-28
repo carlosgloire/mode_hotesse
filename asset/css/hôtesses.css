@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Creepster&family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Creepster&family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&display=swap');
+
+/****************************HERO SECTION***********************/
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    padding: 40px 20px; 
+    position: relative; 
+    z-index: 1; 
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.699);
+    z-index: -1; 
+}
+/*******************************************/
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Pacifico", cursive;
+}
+form {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.form-grid {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.file-upload-section {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr); 
+    width: 100%;
+    margin-top: 30px;
+    justify-items: center; 
+}
+.upload-guide {
+    font-size: 16px; 
+    color: white; 
+    font-weight:bolder;
+    text-align: center; 
+    margin-bottom: -40px; 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+.file-upload-item {
+    width: 100%;
+    max-width: 150px;
+    height: 150px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px dashed lightgray;
+    border-radius: 5px;
+    overflow: hidden; 
+    cursor: pointer;
+    background-color: #f9f9f92d;
+}
+.file-upload-item label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
+    text-align: center;
+}
+.file-upload-item input[type="file"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    position: absolute;
+    cursor: pointer;
+}
+.file-upload-item input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+.file-upload-item .upload-icon {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 24px;
+    pointer-events: none;
+}
+.file-upload-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="file"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="date"], 
+select {
+    background-color: #f9f9f9bb;
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    outline: none;
+    width: 90%; 
+    margin-bottom: 15px; 
+}
+.file-upload-section input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.form-group {
+    flex: 1 1 calc(50%); /* Two columns */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input[type="file"], 
+.submit-btn {
+    flex: 1 1 100%; /* Ensure these elements span full width */
+}
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+input, select{
+   padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+}
+.submit-btn {
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 15px 30px;
+    width: 100%; 
+    max-width: 300px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+.submit-btn:hover {
+    background-color: rgba(0, 0, 0, 0.822);
+}
+.birthdate-fields {
+    display: flex;
+    gap: 10px;
+}
+.submit-container {
+    display: flex;
+    justify-content: center; /* Center the submit button */
+    width: 100%;
+} 
+
+/* Contact Button: Adjust position */
+.contact-btn {
+    padding: 10px 10px;
+    border: 1px solid #333;
+    background-color: rgba(245, 245, 245, 0.884);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+}
+/***************************************footer***************************/
+footer {
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+.footer-about h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: lightgrey;
+}
+.footer-about p {
+    margin: 5px 0;
+}
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: lightgrey;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: rgba(0, 255, 242, 0.342);
+}
+/***************media query****************/
+@media screen and (max-width: 1024px) {
+    .file-upload-section {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-grid {
+        flex-direction: column;
+    }
+    .file-upload-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .file-upload-section {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+    }
+}
+
+ 
+

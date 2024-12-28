@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Creepster&family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Creepster&family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&display=swap');
+/******************************************************************Hero section**********************************************************************/
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.699);
+    z-index: -1;
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 800px;
+}
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+.contact-info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Pacifico", cursive;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Pacifico", cursive;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    transform: scale(1.02);
+    background-color: #f9f9f9bb;
+}
+.send-btn {
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: center;
+}
+.send-btn:hover {
+    background-color: rgba(0, 0, 0, 0.788);
+    transform: translateY(-3px);
+}
+
+.send-btn:active {
+    transform: translateY(0);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/***********************footer***************************************/
+footer {
+    background-color: rgba(0, 0, 0, 0.952);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+.footer-about h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: lightgrey;
+}
+.footer-about p {
+    margin: 5px 0;
+}
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: lightgrey;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: rgba(0, 255, 242, 0.342);
+}
+/****************mediaquery**********************/
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form,
+    .contact-info {
+        text-align: center;
+    }
+    .contact-section{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 90px;
+    }
+    .send-btn {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .send-btn {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+  .contact-info {
+    font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    .contact-info {
+      font-size: 0.90rem;
+      }
+      .contact-info h2 {
+          font-size: 1rem;
+      }
+      .contact-form h2 {
+          font-size: 1rem;
+      }
+      
+  }

@@ -1,7 +1,7 @@
 <?php
 try {
     $bdd = new PDO(
-        'mysql:host=localhost;dbname=mhdb;charset=utf8;', 
+        'mysql:host=localhost;dbname=mode_hotesse;charset=utf8;', 
         'gloire', 
         'Pat102030@@#', 
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
